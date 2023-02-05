@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 LABEL Name=repo Homework_6=0.0.1
 RUN apt-get update
-RUN apt install defaul-jdk -y
+RUN apt install default-jdk -y
 RUN apt install tomcat9 -y
 RUN apt install maven -y
 RUN apt install git -y
