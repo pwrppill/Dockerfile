@@ -1,4 +1,4 @@
-FROM tomcat:8.0
+FROM tomcat:11.0
 LABEL Name=repo Homework_6=0.0.1
 RUN apt-get update
 RUN apt install maven -y
