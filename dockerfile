@@ -7,6 +7,7 @@ RUN apt install git -y
 RUN git clone https://github.com/goodrain/java-war-demo
 WORKDIR ./java-war-demo/
 RUN mvn package
-RUN cp ./target/java-war-demo.war /var/lib/tomcat9/webapps
+RUN pwd
+RUN cp ~/java-war-demo/target/java-war-demo.war /var/lib/tomcat9/webapps
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
