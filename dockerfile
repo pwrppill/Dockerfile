@@ -8,6 +8,6 @@ RUN git clone https://github.com/goodrain/java-war-demo
 WORKDIR ./java-war-demo/
 RUN mvn package
 RUN pwd
-RUN cp /usr/local/tomcat/java-war-demo/target/java-war-demo.war /var/lib/tomcat9/webapps
+RUN cp /usr/local/tomcat/java-war-demo/target/java-war-demo.war /var/lib/tomcat/webapps
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
