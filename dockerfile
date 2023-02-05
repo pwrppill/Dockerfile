@@ -1,4 +1,4 @@
-FROM tomcat
+FROM tomcat:9.0
 LABEL Name=repo Homework_6=0.0.1
 RUN apt-get update
 RUN apt install default-jdk -y
