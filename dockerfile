@@ -1,7 +1,6 @@
 FROM tomcat:8.0
 LABEL Name=repo Homework_6=0.0.1
 RUN apt-get update
-RUN apt install default-jdk -y
 RUN apt install maven -y
 RUN apt install git -y
 RUN git clone https://github.com/goodrain/java-war-demo
