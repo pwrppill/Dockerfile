@@ -7,6 +7,4 @@ RUN git clone https://github.com/koddas/war-web-project.git
 WORKDIR ./war-web-project/
 RUN mvn package
 RUN cp /usr/local/tomcat/war-web-project/target/wwp-1.0.0.war /usr/local/tomcat/webapps
-RUN ls /usr/local/tomcat/
-EXPOSE 8080
-CMD ["catalina.sh", "run"]
+RUN 
