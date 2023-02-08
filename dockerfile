@@ -1,4 +1,5 @@
 FROM bitnami/tomcat:latest
+RUN sudo su
 #LABEL Name=repo Homework_6=0.0.1
 #RUN apt update
 #WORKDIR /opt/
