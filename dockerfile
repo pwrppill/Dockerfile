@@ -5,7 +5,7 @@ RUN apt update
 #RUN wget https://archive.apache.org/dist/maven/maven-3/3.0.4/binaries/apache-maven-3.0.4-bin.tar.gz && tar xzvf apache-maven-*-bin.tar.gz && cp apache-maven-3.0.4/bin /bin/mvn
 RUN apt install maven git -y
 RUN apt install -y libc6-x32 libc6-i386
-RUN wget https://download.oracle.com/java/18/latest/jdk-18_linux-x64_bin.deb
+RUN wget https://download.oracle.com/java/18/archive/jdk-18.0.2.1_linux-x64_bin.deb
 RUN sudo dpkg -i jdk-18_linux-x64_bin.deb
 RUN sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-18/bin/java 1
 RUN java -version
