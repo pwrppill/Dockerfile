@@ -1,6 +1,6 @@
 FROM bitnami/tomcat:latest
 #LABEL Name=repo Homework_6=0.0.1
-RUN apt-get update
+RUN apt update
 #WORKDIR /opt/
 #RUN wget https://archive.apache.org/dist/maven/maven-3/3.0.4/binaries/apache-maven-3.0.4-bin.tar.gz && tar xzvf apache-maven-*-bin.tar.gz && cp apache-maven-3.0.4/bin /bin/mvn
 RUN apt install maven -y
